@@ -98,9 +98,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: release-name-heapster
-  annotations:
-    {}
-
   labels:
     chart: "heapster-1.0.2"
 spec:
@@ -110,9 +107,6 @@ spec:
       app: release-name-heapster
   template:
     metadata:
-      annotations:
-        {}
-
       labels:
         app: release-name-heapster
     spec:
